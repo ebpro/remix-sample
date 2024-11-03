@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            customColor: '#ff6347',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="container mx-auto">
+    <h1 class="text-4xl font-bold text-center mb-4">E-commerce Store</h1>
+    <p class="text-center text-gray-700 mb-6">Welcome to our online store. Find the best products here!</p>
+
+    <!-- Flexbox for Navigation -->
+    <nav class="flex justify-between bg-blue-500 p-4 text-white mb-6">
+      <div class="flex space-x-4">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline">Shop</a>
+        <a href="#" class="hover:underline">Contact</a>
+      </div>
+      <div>
+        <a href="#" class="hover:underline">Cart (0)</a>
+      </div>
+    </nav>
+
+    <!-- Grid for Products -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+      <div class="bg-white p-4 rounded shadow">
+        <img src="https://via.placeholder.com/150" alt="Product 1" class="w-full mb-4">
+        <h2 class="text-xl font-bold mb-2">Product 1</h2>
+        <p class="text-gray-700 mb-4">$19.99</p>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add to Cart</button>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <img src="https://via.placeholder.com/150" alt="Product 2" class="w-full mb-4">
+        <h2 class="text-xl font-bold mb-2">Product 2</h2>
+        <p class="text-gray-700 mb-4">$29.99</p>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add to Cart</button>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <img src="https://via.placeholder.com/150" alt="Product 3" class="w-full mb-4">
+        <h2 class="text-xl font-bold mb-2">Product 3</h2>
+        <p class="text-gray-700 mb-4">$39.99</p>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Dark Mode Example -->
+    <div class="bg-white dark:bg-gray-800 text-black dark:text-white p-4 mb-6">
+      This is a dark mode example.
+    </div>
+
+    <!-- Reusable Button Example -->
+    <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded mb-6">
+      Reusable Button
+    </button>
+
+    <!-- Custom Color Example -->
+    <div class="bg-customColor text-white p-4 mb-6">
+      Custom Color Example
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-gray-700 mt-6">
+      <p>&copy; 2023 E-commerce Store. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
